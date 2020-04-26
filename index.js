@@ -1,4 +1,4 @@
-// burger menu button animation
+// burger menu button animation for mobile
 
 $(document).ready(function () {
 

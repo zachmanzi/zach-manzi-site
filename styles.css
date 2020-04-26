@@ -1,7 +1,6 @@
 body {
   font-family: 'Baloo Chettan 2', Helvetica, sans-serif;
   color: #0F1B26;
-  background-color: #FFFFFF;
 }
 
 a {
@@ -14,11 +13,11 @@ a:hover {
 }
 
 a.current {
-  color: #a0a0a0;
+  opacity: 50%;
 }
 
 button:focus, input[type="button"]:focus {
-    outline: none;
+  outline: none;
 }
 
 footer {
@@ -45,12 +44,8 @@ h4 {
 
 header {
   text-align: left;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  color: #FFFFFF;
-  background-color: #0F1B26;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 hr {
@@ -65,7 +60,6 @@ i {
 }
 
 li {
-  color: #0F1B26;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -103,8 +97,8 @@ p {
 }
 
 .jumbotron {
-  background-color: #0F1B26;
-  color: #ffffff;
+  background-color: #0f1b26;
+  color: #FFFFFF;
   text-align: center;
   height: 300px;
   border-radius: 0;
@@ -121,9 +115,13 @@ p {
 }
 
 .navbar {
-  background-color: #ffffff;
-  padding-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
+}
+
+.nav-link {
+  color: #0F1B26;
 }
 
 /* burger icon animation */
@@ -167,11 +165,11 @@ background: #0F1B26;
 }
 
 .animated-icon2 span {
-background: #ffffff;
+background: #FFFFFF;
 }
 
 .animated-icon3 span {
-background: #ffffff;
+background: #FFFFFF;
 }
 
 .animated-icon1 span:nth-child(1) {
