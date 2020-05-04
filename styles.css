@@ -1,15 +1,25 @@
 body {
   font-family: 'Baloo Chettan 2', Helvetica, sans-serif;
-  color: #0F1B26;
+  color: #000000;
 }
 
 a {
-  color: #0F1B26;
+  color: #000000;
+  font-size: 18px;
+}
+
+a.nav-link-home {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  a.nav-link-home {
+    color: #000000;
+  }
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #355F94;
+  opacity: 70%;
 }
 
 a.current {
@@ -27,25 +37,26 @@ footer {
 }
 
 h1 {
+  font-family: 'Vesper Libre', 'Times Roman', serif;
   font-size: 80px;
 }
 
 h2 {
+  font-family: 'Vesper Libre', 'Times Roman', serif;
   font-size: 60px;
 }
 
 h3 {
+  font-family: 'Vesper Libre', 'Times Roman', serif;
   font-size: 40px;
+  margin-bottom: 0;
 }
 
 h4 {
-  font-size: 30px;
-}
-
-header {
-  text-align: left;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  font-family: 'Baloo Chettan 2', 'Helvetica', serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 hr {
@@ -59,6 +70,10 @@ i {
   margin-right: 10px;
 }
 
+img {
+  width: 100%;
+}
+
 li {
   margin-left: 20px;
   margin-right: 20px;
@@ -66,6 +81,7 @@ li {
 
 p {
   margin-bottom: 0;
+  font-size: 18px;
 }
 
 #emailHelp {
@@ -76,6 +92,25 @@ p {
   margin-bottom: 20px;
 }
 
+/* #homeCarousel {
+  position: absolute;
+  width: 100%;
+  top: 0;
+} */
+
+#homeImage {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  #homeImage {
+    position: relative;
+    width: 100%;
+  }
+}
+
 #inputEmail {
   width: 400px;
   display: flex;
@@ -83,21 +118,14 @@ p {
   align-items: center;
 }
 
-#logoImage {
-  width: 100px;
-}
-
-#newsletterForm {
-  margin-top: 10px;
-}
-
-.btn-dark {
-  background-color: #0F1B26;
-  border-color: #0F1B26;
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 1.5s ease;
+  transition: transform 1.5s ease;
+  transition: transform 1.5s ease, -webkit-transform 1.5s ease;
 }
 
 .jumbotron {
-  background-color: #0f1b26;
+  background-color: #000000;
   color: #FFFFFF;
   text-align: center;
   height: 300px;
@@ -109,19 +137,37 @@ p {
   margin-bottom: 40px;
 }
 
+.logo-image {
+  width: 250px;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .navbar {
-  padding-top: 50px;
-  padding-bottom: 50px;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.nav-link {
-  color: #0F1B26;
+.navbar-brand:hover {
+  opacity: 100%;
+}
+
+.navbar-home {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 9;
+  background-color: rgb(255, 255, 255, 0)
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-home {
+    background-color: #FFFFFF;
+  }
 }
 
 /* burger icon animation */
@@ -161,7 +207,7 @@ transition: .25s ease-in-out;
 }
 
 .animated-icon1 span {
-background: #0F1B26;
+background: #000000;
 }
 
 .animated-icon2 span {
