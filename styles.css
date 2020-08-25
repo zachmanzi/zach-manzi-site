@@ -36,19 +36,23 @@ footer {
   text-align: center;
 }
 
-h1 {
-  font-family: 'Vesper Libre', 'Times Roman', serif;
-  font-size: 80px;
+footer.footer-home {
+  color: #000000;
 }
 
-h2 {
+h1 {
   font-family: 'Vesper Libre', 'Times Roman', serif;
   font-size: 60px;
 }
 
-h3 {
+h2 {
   font-family: 'Vesper Libre', 'Times Roman', serif;
-  font-size: 40px;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Baloo Chettan 2', 'Helvetica', serif;
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -81,7 +85,7 @@ li {
 
 p {
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #emailHelp {
@@ -90,25 +94,6 @@ p {
 
 #exampleInputEmail1 {
   margin-bottom: 20px;
-}
-
-/* #homeCarousel {
-  position: absolute;
-  width: 100%;
-  top: 0;
-} */
-
-#homeImage {
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
-
-@media only screen and (max-width: 767px) {
-  #homeImage {
-    position: relative;
-    width: 100%;
-  }
 }
 
 #inputEmail {
@@ -122,6 +107,11 @@ p {
   transition: -webkit-transform 1.5s ease;
   transition: transform 1.5s ease;
   transition: transform 1.5s ease, -webkit-transform 1.5s ease;
+}
+
+.greeting-text {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .jumbotron {
@@ -138,7 +128,7 @@ p {
 }
 
 .logo-image {
-  width: 250px;
+  width: 75px;
 }
 
 .my-auto {
@@ -161,7 +151,11 @@ p {
   padding-top: 20px;
   padding-bottom: 20px;
   z-index: 9;
-  background-color: rgb(255, 255, 255, 0)
+  background-color: rgb(0, 0, 0, 0.6)
+}
+
+.no-bullets {
+  list-style-type: none;
 }
 
 @media only screen and (max-width: 767px) {
